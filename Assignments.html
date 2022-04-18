@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+            
+</head>
+<body>
+    <div id="container">
+        <header class="jumbotron text-center">
+            <h1>Private School Structure</h1>
+            <p>Be the best version of you!</p>
+        </header>
+<!-- Start of Navbar -->        
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a href="#" class="navar-brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Students.html">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Trainers.html">Courses</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Assignments.html">Assignments</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!-- End of Navbar -->    
+
+<!-- Start of Forms -->
+
+<div class="rows"> 
+    <div class="col-lg-5 offset-lg-1 my-5">
+        <p class="bg-primary"><strong>Please fill the form bellow</strong></p>
+            <form action="">
+                <div class="radio">
+                    <label name="title" id="title" required>Title</label>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" id="Javascript" checked>Javascript</label>
+                        <p>JavaScript is a dynamic programming language that's used for web development, 
+                            in web applications, for game development, and lots more. It allows you to implement dynamic features
+                             on web pages that cannot be done with only HTML and CSS.</p>
+                      </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" id="Java" checked>Java</label>
+                        <p>Java is a widely used object-oriented programming language and software platform that runs on billions 
+                            of devices, including notebook computers, mobile devices, gaming consoles, 
+                            medical devices and many others.</p>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" id="C#" checked>C#</label>
+                        <p>C# (pronounced "C-sharp") is an object-oriented programming language from Microsoft 
+                            that aims to combine the computing power of C++ with the programming ease of Visual Basic.</p>
+                      </div>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="subDateTime">Submision Date Time</label>
+                    <input type="date" class="form-control" id="subDateTime" name="subDateTime">
+                </div>
+                <div class="form-group">
+                    <label for="oralMark">Oral Mark</label>
+                    <input type="number" class="form-control" id="oralMark" name="oralMark" min="1" max="40" placeholder="Oral Mark"required>
+                </div>
+                <div.class="form-group">
+                    <label for="subMark">Subtotal Mark</label>
+                    <input type="number" class="form-control" id="sublMark" name="subMark" min="1" max="60" placeholder="Subtotal Mark"required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+                
+             </form>
+    </div>
+    <div class="col-lg-5 offset-lg-1 my-5">
+        <p class="bg-primary"><strong>Please fill the form bellow</strong></p>
+            <form action="">
+                <div class="radio">
+                    <label name="title" id="title" required>Title</label>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" checked>Javascript</label>
+                      </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" checked>Java</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" checked>C#</label>
+                      </div>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="subDateTime">Submision Date Time</label>
+                    <input type="date" class="form-control" id="subDateTime" name="subDateTime">
+                </div>
+                <div class="form-group">
+                    <label for="oralMark">Oral Mark</label>
+                    <input type="number" class="form-control" id="oralMark" name="oralMark" min="1" max="40" placeholder="Oral Mark"required>
+                </div>
+                <div.class="form-group">
+                    <label for="subMark">Subtotal Mark</label>
+                    <input type="number" class="form-control" id="sublMark" name="subMark" min="1" max="60" placeholder="Subtotal Mark"required>
+                </div>
+                <button type="submit" class="btn btn-primary">Edit</button>
+            </form>
+    </div>
+</div>
+
+
+<!-- End of Forms -->
+<!-- Start of validation -->
+    <script>
+        $('#subDateTime').change(function() {
+        checkMyDateWithinRange(new Date($(this).val()))     
+    });
+    
+function checkMyDateWithinRange(myDate) {
+    var startDate = new Date(2022, 06, 01);
+    
+    if (startDate <= myDate && myDate <= endDate) {
+        alert('Date is in Range');
+    }
+    else     
+     alert('Date is not in Range');
+    }
+
+    
+
+       
+
+
+
+    </script>
+<!-- End of validation -->
+<!-- End of Footer-->
+
+<footer class="jumbotron text-center">
+    <p>Copyright (c) 2021 iMant Programming</p>
+</footer>
+    </div>
+<!-- End of Footer-->
+</body>
+</html>

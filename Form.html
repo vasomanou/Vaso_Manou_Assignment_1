@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <header class="jumbotron text-center">
+            <h1>Private School Structure</h1>
+            <p>Be the best version of you!</p>
+        </header>
+<!--Start of NavBar-->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a href="#" class="navar-brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Students.html">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Trainers.html">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Assignments.html">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Form.html">Form</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!--End of NavBar-->    
+
+<!-- Start of Forms-->
+    <!--Courses per trainers-->
+    <div class="row">        
+    <div class="col-lg-12">
+        <h2>Courses per Students per Assignment</h2>
+    </div>
+    
+    </div>
+    <div class="row">
+        <br>
+        <div class="col-lg-6">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Javascript</td>
+                        <td><button type="button">JS Course</button></td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td><button type="button">Java Course</button></td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td><button type="button">C# Course</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="alert alert-info">
+            <ul class="list-group" id="javascript-course">
+                <li class="list-group-item">John Smith</li>
+                <li class="list-group-item">George Park</li>
+                <li class="list-group-item">Helen Dash</li>
+                <li class="list-group-item">Diana Green</li>
+            </ul>
+            <ul class="list-group" id="java-course">
+                <li class="list-group-item">George Park</li>
+                <li class="list-group-item">Helen Dash</li>
+            </ul>
+            <ul class="list-group" id="c-course">
+                <li class="list-group-item">John Smith</li>
+                <li class="list-group-item">Helen Dash</li>
+                <li class="list-group-item">Diana Green</li>
+            </ul>
+            </div>  
+        </div>
+    </div>
+
+    <!--Courses per Students-->
+    <div class="row">
+    <div class="col-lg-12">
+        <h2>Courses per Students</h2>
+    </div>
+    
+    </div>
+    <div class="row">
+        <br>
+        <div class="col-lg-6">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Javascript</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-6">
+            <div class="alert alert-info">
+            <ul class="list-group" id="javascript-students">
+                <li class="list-group-item">Giannis Papadopoulos</li>
+                <li class="list-group-item">George Giannoulis</li>
+                <li class="list-group-item">Eleni Drosopoulou</li>
+                <li class="list-group-item">Kostas Leontidis</li>
+            </ul>
+            <ul class="list-group" id="java-students">
+                <li class="list-group-item">Maria Dikopoulou</li>
+                <li class="list-group-item">Aleksandros Galanos</li>
+            </ul>
+            <ul class="list-group" id="c-students">
+                <li class="list-group-item">Mina Sanadou</li>
+                <li class="list-group-item">Nikos Lonas</li>
+                <li class="list-group-item">Lia Mavkri</li>
+            </ul>
+            </div>  
+        </div>
+    </div>
+</div>
+
+<!--Courses per Assignments-->
+<div class="row">        
+    <div class="col-lg-12">
+        <h2>Courses per Assignments</h2>
+    </div>
+    
+    </div>
+    <div class="row">
+        <br>
+        <div class="col-lg-6">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Javascript</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                       
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="alert alert-info">
+            <ul class="list-group" id="javascript-assignments">
+                <li class="list-group-item">Part A</li>
+                <li class="list-group-item">Part B</li>
+                <li class="list-group-item">Group Assignment</li>
+            </ul>
+            <ul class="list-group" id="java-assignments">
+                <li class="list-group-item">Individual Assignment</li>
+                <li class="list-group-item">Group Assignment</li>
+            </ul>
+            <ul class="list-group" id="c-assignments">
+                <li class="list-group-item">Part A</li>
+                <li class="list-group-item">Part B</li>
+                <li class="list-group-item">Group Assignment</li>
+            </ul>
+            </div>  
+        </div>
+    </div>
+ 
+<!--End of Forms-->
+
+<!--Start of validation-->
+<script>
+    $(document).ready(function(){
+            $('#javascript-course').hide()
+            $('#java-course').hide()
+            $('#c-course').hide()
+
+            $('button:eq(1)').click(()=>{
+                $('#javascript-course').slideToggle(1000,'swing')
+                $('#java-course').slideUp()
+                $('#c-course').slideUp()
+            })
+            $('button:eq(2)').click(()=>{
+                $('#java-course').slideToggle(1000,'swing')
+                $('#javascript-course').slideUp()
+                $('#c-course').slideUp()
+            })
+            $('button:eq(3)').click(()=>{
+                $('#c-course').slideToggle(1000,'swing')
+                $('#javascript-course').slideUp()
+                $('#java-course').slideUp()
+
+                
+                
+            })
+        })
+
+        $(document).ready(function(){
+            $('#javascript-students').hide()
+            $('#java-students').hide()
+            $('#c-students').hide()
+            
+            
+            $('button:eq(1)').click(()=>{
+                $('#javascript-students').slideToggle(1000,'swing')
+                $('#java-students').slideUp()
+                $('#c-students').slideUp()
+            })
+            $('button:eq(2)').click(()=>{
+                $('#java-students').slideToggle(1000,'swing')
+                $('#javascript-students').slideUp()
+                $('#c-students').slideUp()
+            })
+            $('button:eq(3)').click(()=>{
+                $('#c-students').slideToggle(1000,'swing')
+                $('#javascript-students').slideUp()
+                $('#java-students').slideUp()
+
+                
+                
+            })
+        })
+        
+
+        $(document).ready(function(){
+            $('#javascript-assignments').hide()
+            $('#java-assignments').hide()
+            $('#c-assignments').hide()
+
+            $('button:eq(1)').click(()=>{
+                $('#javascript-assignments').slideToggle(1000,'swing')
+                $('#java-assignments').slideUp()
+                $('#c-assignments').slideUp()
+            })
+            $('button:eq(2)').click(()=>{
+                $('#java-assignments').slideToggle(1000,'swing')
+                $('#javascript-assignments').slideUp()
+                $('#c-assignments').slideUp()
+            })
+            $('button:eq(3)').click(()=>{
+                $('#c-assignments').slideToggle(1000,'swing')
+                $('#javascript-assignments').slideUp()
+                $('#java-assignments').slideUp()
+
+                
+                
+            })
+        })
+</script>
+
+<!--End of validation-->
+
+
+</div>
+<!--Start of Footer-->
+<footer class="jumbotron text-center">
+    <p>Copyright (c) 2021 iMant Programming</p>
+</footer>
+<!--End of Footer-->
+</div>
+    
+</body>
+</html>

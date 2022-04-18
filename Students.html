@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Start of Navbar --> 
+    <div id="container">
+        <header class="jumbotron text-center">
+            <h1>Private School Structure</h1>
+            <p>Be the best version of you!</p>
+        </header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a href="#" class="navar-brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Students.html">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Trainers.html">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Assignments.html">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Form.html">Form</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!-- End of Navbar --> 
+
+<!-- Start of Forms --> 
+    <div class="row">
+        <div class="col-lg-5 offset-lg-1 my-5">
+            <p class="bg-primary"><strong>Please fill the form bellow</strong></p>
+            <form action="">
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="front-control" name="firstname" id="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="front-control" name="lastname" id="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="date-of-birth">Date of Birth:</label>
+                    <input type="date" class="form-control" id="date-of-birth" name="date-ofbirth">
+                </div>
+                <div class="form-group">
+                    <label for="tuition-fees">Tuition Fees:</label>
+                    <input type="number" class="form-control" id="tuition-fees" name="tuition-fees" min="300" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+                
+             </form>
+        </div>
+
+        <div class="col-lg-5 offset-lg-1 my-5">
+            <p class="bg-primary"><strong>Please fill the form bellow</strong></p>
+            <form action="">
+                <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input type="text" class="front-control" name="first_name" id="first_name"
+                    value="GEORGE" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" class="front-control" name="last_name" id="last_name"
+                    value="PAPADOPOULOS" required>
+                </div>
+                <div class="form-group">
+                    <label for="date-of-birth">Date of Birth:</label>
+                    <input type="date" class="form-control" id="date-of-birth" name="date-ofbirth"
+                    value="1998-04-23">
+                </div>
+                <div class="form-group">
+                    <label for="tuition-fees">Tuition Fees:</label>
+                    <input type="number" class="form-control" id="tuition-fees" name="tuition-fees" min="300"
+                    value="600" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Edit</button>
+                
+            </form>
+        </div>
+    </div>
+<!-- End of Forms --> 
+
+<!-- Start of Footer --> 
+    <footer class="jumbotron text-center">
+        <p>Copyright (c) 2021 iMant Programming</p>
+    </footer>
+</div>
+<!-- End of Footer --> 
+    
+<!-- Start of Validation --> 
+    <script>
+        $(function(){
+            $('#firstname-error').hide();
+    
+            var error_fname = '';
+            $('#firstname').focusout(function(){
+                checkFirstName();
+            });
+            function checkFirstName(){
+                var pattern = /^[a-zA-Z]*$/;
+                var firstname = $('#firstname').val();
+                console.log(firstname);
+                if (pattern.test(firstname) && firstname !==''){
+                    $('#firstname-error').hide();
+                    $('#firstname').css({"border-bottom" : "2px solid #c1502e"});
+                    $('input[type=text]').val( function(){
+                        return this.value.toUpperCase();
+                    });
+                }
+                else {
+                    $('#firstname-error').show().html("Should contain only characters!");
+                    error_fname ='true';
+                }
+            }
+        })
+        $(function(){
+            $('#lastname-error').hide();
+    
+            var error_lname = '';
+            $('#lastname').focusout(function(){
+                checkLastName();
+            });
+            function checkLastName(){
+                var pattern = /^[a-zA-Z]*$/;
+                var lastname = $('#lastname').val();
+                console.log(lastname);
+                if (pattern.test(lastname) && lastname !==''){
+                    $('#lastname-error').hide();
+                    $('#lastname').css({"border-bottom" : "2px solid #c1502e"});
+                    $('input[type=text]').val( function(){
+                        return this.value.toUpperCase();
+                    });
+                }
+                else {
+                    $('#lastname-error').show().html("Should contain only characters!");
+                    error_lname ='true';
+                }
+            }
+        })
+        
+        
+
+        
+    </script>
+<!-- End of Validation -->    
+</body>
+</html>
